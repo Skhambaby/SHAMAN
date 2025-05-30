@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header-section header-normal">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="container">
+                <div class="nav-menu">
+                    <nav class="mainmenu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Главная</a></li>
+                            <li><a href="./about-us.html">О нас</a></li>
+                            <li><a href="./schedule.html">Анонс</a></li>
+                            <li><a href="./gallery.html">Каталог</a></li>
+                            <li><a href="./blog.html">Профиль</a>
+                            <li><a href="./contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact-info">
+                        <h4>Информация</h4>
+                        <ul>
+                            <li><i class="fa fa-phone"></i>+7 (924) 761-26-98</li>
+                            <li><i class="fa fa-envelope"></i>Info.shaman@mail.ru</li>
+                        </ul>
+                    </div>
+                    <div class="contact-address">
+                        <h4>Адрес</h4>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i> Улица, Корпус, Строение, Якутск
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="contact-form">
+                        <h4>Вход в учетную запись</h4>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Имя">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Номер">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="E-mail">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Пароль">
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="c-btn">Войти</button>
+                                    <div class="login-notification" id="loginNotification">
+    Вы вошли в аккаунт!
+</div>
+
+<style>
+    .login-notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: none;
+        z-index: 1000;
+        animation: slideIn 0.5s, fadeOut 0.5s 2.5s forwards;
+    }
+    
+    @keyframes slideIn {
+        from {right: -300px; opacity: 0;}
+        to {right: 20px; opacity: 1;}
+    }
+    
+    @keyframes fadeOut {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
+</style>
+
+<script>
+    document.querySelector('.c-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        const notification = document.getElementById('loginNotification');
+        notification.style.display = 'block';
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 3000);
+    });
+</script>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-text">
+                        <h3>Подарок от партнеров</h3>
+                        <p>Постоянным покупателям скидка! При подписке на наши рассылки скидка -15% на весь ассортимент!</p>
+                    </div>
+                    <a href="#" class="primary-btn cta-btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo-item">
+                        <div class="f-logo">
+                            <a href="#"><img src="img/черныйлого.jpeg" width="135" height="100" alt="">
+                        </div>
+                        <p>Логотип создан с помощью редактора векторной графики, разработанный компанией Adobe.</p>
+                        <div class="social-links">
+                            <a href="#"></a><h6>Подпишись</h6></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>О нас</h5>
+                        <div class="footer-blog">
+                            <a href="#" class="fb-item">
+                                <h6>инфо</h6>
+                                <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                            </a>
+                            <a href="#" class="fb-item">
+                                <h6>инфо </h6>
+                                <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                            </a>
+                            <a href="#" class="fb-item">
+                                <h6>инфо </h6>
+                                <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h5>Инфо</h5>
+                        <ul class="workout-program">
+                            <li><a href="#">.....................</a></li>
+                            <li><a href="#">.....................</a></li>
+                            <li><a href="#">.....................</a></li>
+                            <li><a href="#">.....................</a></li>
+                            <li><a href="#">.....................</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5>Инфо</h5>
+                        <ul class="footer-info">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>Телефон:</span>
+                                +7 (924) 761-26-98
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>Email:</span>
+                                Shaman.info@mail.ru
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Адрес</span>
+                                Улица, строение корпус, Якутск
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="ct-inside">
+Якутск &copy;<script>document.write(new Date().getFullYear());</script> дипломная работа | сделано для <i class="fa fa-heart-o" aria-hidden="true"></i><a href="https://www.s-vfu.ru/universitet/rukovodstvo-i-struktura/instituty/colleges/college-of-technology/" target="_blank"> СВФУ КИТ</a></div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
